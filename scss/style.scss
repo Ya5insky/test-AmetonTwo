@@ -1,0 +1,121 @@
+@import "fonts";
+@import "vars";
+
+
+*, body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'MuseoSansCyrl', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+button,
+button:active,
+button:focus  {
+  border:none;
+}
+
+
+.wrapper {
+    &__container {
+        width: 100%;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        .wrapper__description {
+            max-width: 690px;
+            padding-top: 22px;
+            .description__title {
+                display: flex;
+                margin-bottom: 16px;
+                align-items: center;
+                .title {
+                    font-weight: 700;
+                    font-size: 24px;
+                }
+                .title__share {
+                    width: 24px;
+                    height: 24px;
+                    background-image: url(../img/share.svg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-color: transparent;
+                    border: 0;
+                    margin-left: 12px;
+                    cursor: pointer;
+                }
+            }
+            .description__text {
+                font-size: 15px;
+                font-weight: 500;
+            }
+
+            .description__footer {
+                margin: 40px 0px ;
+                
+                p {
+                    font-size: 13px;
+                    font-weight: 700;
+                }
+                .footer__links {
+                    display:flex;
+                    margin-top: 16px;
+                    .link__chat {
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                        border-radius: 12px;
+                        font-size: 15px;
+                        font-weight: 700;
+                        background-color: $green;
+                        color: $white;
+                        margin-right: 8px;
+                        min-width: 224px;
+                        height: 48px;
+                        span {
+                            margin-left: 8px;
+                        }
+                    }
+                    .link__phone {
+                        margin-right: 8px;
+                        width: 48px;
+                        height: 48px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: $grayWhite;
+                        border-radius: 12px;
+                    }
+                    .link__msg {
+                        width: 48px;
+                        height: 48px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: $grayWhite;
+                        border-radius: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 1280px) {
+    .wrapper__container {
+        width: 1260px;
+    }
+}
+
+@media (max-width: 767px) {
+    .wrapper__container .wrapper__description .description__footer .footer__links .link__chat {
+        min-width: 180px;
+    }
+}
+

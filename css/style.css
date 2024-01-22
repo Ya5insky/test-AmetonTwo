@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "MuseoSansCyrl";
+  src: url("../fonts/MuseoSansCyrl.eot");
+  src: url("../fonts/MuseoSansCyrl.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl.woff") format("woff"), url("../fonts/MuseoSansCyrl.woff2") format("woff2"), url("../fonts/MuseoSansCyrl.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "MuseoSansCyrl";
+  src: url("../fonts/MuseoSansCyrl-500.eot");
+  src: url("../fonts/MuseoSansCyrl.eot-500?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-500.woff") format("woff"), url("../fonts/MuseoSansCyrl-500.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-500.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "MuseoSansCyrl";
+  src: url("../fonts/MuseoSansCyrl-700.eot");
+  src: url("../fonts/MuseoSansCyrl.eot-700?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl-700.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-700.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+*, body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  font-family: "MuseoSansCyrl", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+button:active,
+button:focus {
+  border: none;
+}
+
+.wrapper__container {
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrapper__container .wrapper__description {
+  max-width: 690px;
+  padding-top: 22px;
+}
+.wrapper__container .wrapper__description .description__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper__container .wrapper__description .description__title .title {
+  font-weight: 700;
+  font-size: 24px;
+}
+.wrapper__container .wrapper__description .description__title .title__share {
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/share.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 0;
+  margin-left: 12px;
+  cursor: pointer;
+}
+.wrapper__container .wrapper__description .description__text {
+  font-size: 15px;
+  font-weight: 500;
+}
+.wrapper__container .wrapper__description .description__footer {
+  margin: 40px 0px;
+}
+.wrapper__container .wrapper__description .description__footer p {
+  font-size: 13px;
+  font-weight: 700;
+}
+.wrapper__container .wrapper__description .description__footer .footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 16px;
+}
+.wrapper__container .wrapper__description .description__footer .footer__links .link__chat {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: rgb(54, 186, 95);
+  color: rgb(255, 255, 255);
+  margin-right: 8px;
+  min-width: 224px;
+  height: 48px;
+}
+.wrapper__container .wrapper__description .description__footer .footer__links .link__chat span {
+  margin-left: 8px;
+}
+.wrapper__container .wrapper__description .description__footer .footer__links .link__phone {
+  margin-right: 8px;
+  width: 48px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgb(249, 249, 249);
+  border-radius: 12px;
+}
+.wrapper__container .wrapper__description .description__footer .footer__links .link__msg {
+  width: 48px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgb(249, 249, 249);
+  border-radius: 12px;
+}
+
+@media (min-width: 1280px) {
+  .wrapper__container {
+    width: 1260px;
+  }
+}
+@media (max-width: 767px) {
+  .wrapper__container .wrapper__description .description__footer .footer__links .link__chat {
+    min-width: 180px;
+  }
+}
